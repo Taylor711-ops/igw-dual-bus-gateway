@@ -1,0 +1,50 @@
+{
+  "revision": "R12.2",
+  "date": "2026-10-21",
+  "base_r11_zip_sha256": "4fede49002de1a56c28f283a74a358ec42d17e7391143391945bf335623dc27c",
+  "r6_zip_sha256": "bdb2fcce0a2555cffd34f5824515cca46da9ab5cecf1d77a5201f9c454c83bdf",
+  "unchanged_r11_vault_sha256": "1595ce6c0217eed187a6e5f93f54b22df6007a751eaed23d7dc1146d8851b09f",
+  "frozen_model_json_sha256": "1e6bdb90067e7bab0a6aa70639332dd5dea26f0754e796fdd71ee7e287681e17",
+  "model_id": "010cdc1cbf2a01d50f657acc415597ab2a4a032bd283c6065a5eb0dc8d2e1f34",
+  "feature_contract": "ps_snapshot_window_r12_transfer",
+  "classification_validation": "PENDING_BOARD_DOMAIN_TEST",
+  "npu_server_changes": [
+    "R6 .222:15002 -> loopback127.0.0.1:16002",
+    "banner revision only; engine/reference/protocol/generated fixtures unchanged"
+  ],
+  "preserved_sources": [
+    "src/igw_can_udp.c",
+    "src/igw_rs485_rw.c",
+    "src/rw_wire.h",
+    "src/igw_vault.c"
+  ],
+  "hardware_unchanged": [
+    "main pinned R2 BOOT",
+    "slave RW_R9",
+    "PL and clocks"
+  ],
+  "previous_r11_operator_evidence": {
+    "cross_archive": "igw-97b3c74d717bd8c6499393e6.igwe",
+    "authenticated_plaintext_bytes": 6414,
+    "cross_register": 31,
+    "can_written": 23130,
+    "rs485_written_and_readback": 65535,
+    "write_count": [
+      218,
+      220
+    ],
+    "prior_archive_normal_reboot_plaintext_sha256": "86203a5c27fc6755c5fd7d1af042812f0e3543c9d89f2355700f1ee2ddc1684f"
+  },
+  "r12_hardware": "Operator supplied normal/CAN fault/RS485 fault sessions, independently audited; see evidence/BOARD_AUDIT.json",
+  "deadline": "2026-10-23",
+  "full_project_status": "NOT_COMPLETE",
+  "base_r12_zip_sha256": "32afcadfb9c5fbd3e1c8638017113a8e82bd59033397616918c3367e82ef57c7",
+  "stop_fix_r12_1_zip_sha256": "3fa646c8c7c4d7ec604240e97f056a26fe4cbf49e85e46121e40b04249690188",
+  "r12_2_hardware": "NOT_RUN",
+  "r12_2_changes": [
+    "Explicit availability-derived transition phase, with raw model label preserved",
+    "Display clipping count and original model prediction",
+    "Merge tested R12.1 duplicate-TERM cleanup",
+    "Independent offline feature/quantization/raw-frame audit of three supplied R12 sessions"
+  ]
+}

@@ -1,0 +1,34 @@
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (unit_address_vs_reg): /soc/vdma@80200000/dma-channel@80200000: node has a unit name, but no reg or ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (unit_address_vs_reg): /memory: node has a reg or ranges property, but no unit name
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/serial@F8400000: simple-bus unit address format error, expected "f8400000"
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/serial@F8401000: simple-bus unit address format error, expected "f8401000"
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/fpga-mgr@F8082000: simple-bus unit address format error, expected "f8801000"
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/base_fpga_region: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/can@0xF8408000: simple-bus unit address format error, expected "f8408000"
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/can@0xF8409000: simple-bus unit address format error, expected "f8409000"
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/ahb_dma@F804D000: simple-bus unit address format error, expected "f804d000"
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/ethernet0@F8100000: simple-bus unit address format error, expected "f8100000"
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/ethernet1@F8110000: simple-bus unit address format error, expected "f8110000"
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/usb@F8180000: simple-bus unit address format error, expected "f8180000"
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/hard_npu@63F00000: simple-bus unit address format error, expected "63f00000"
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/APB_PCLK: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/IIC_CLK: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/GPIO_CLK: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/ttc_clk: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/ahb_dma_clk: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/ADC_CLK: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/WDT_CLK: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/GBE_CLK: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/PHY_CLK: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/PTP_CLK: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/CAN_CLK: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/DWMMC_CIU_CLK: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/DWMMC_BIU_CLK: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/qspi_m_clk: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/SMC_CLK: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/leds: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/keys: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (simple_bus_reg): /soc/reset-controller: missing or empty reg/ranges property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (avoid_unnecessary_addr_size): /soc/ethernet0@F8100000: unnecessary #address-cells/#size-cells without "ranges", "dma-ranges" or child "reg" property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (avoid_unnecessary_addr_size): /soc/ethernet1@F8110000: unnecessary #address-cells/#size-cells without "ranges", "dma-ranges" or child "reg" property
+output/IGW_R15_DTB_FIX1/reference/system_r2_original.dts: Warning (avoid_unnecessary_addr_size): /soc/adc@f840b000: unnecessary #address-cells/#size-cells without "ranges", "dma-ranges" or child "reg" property

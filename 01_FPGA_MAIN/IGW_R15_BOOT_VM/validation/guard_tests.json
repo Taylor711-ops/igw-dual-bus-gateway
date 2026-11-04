@@ -1,0 +1,10 @@
+{
+  "result": "PASS_GUARD_TESTS_ONLY",
+  "reference_headers_and_inputs": "PASS",
+  "old_PL_rejected": true,
+  "changed_FSBL_UBoot_PL_rejected": true,
+  "bad_headers_chain_ranges_rejected": true,
+  "comparison_positive_fixture": "TEMPORARY_NONBOOTABLE_ONLY",
+  "vendor_albg_executed": false,
+  "board_boot_verified": false
+}

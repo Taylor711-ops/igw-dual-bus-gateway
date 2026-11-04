@@ -1,0 +1,8 @@
+{
+  "result": "PASS_LOCAL_INPUT_AND_GUARD_CHECKS",
+  "shell_syntax": "PASS",
+  "BIF_generation": "PASS",
+  "vendor_albg_executed_locally": false,
+  "BOOT_R15_generated_locally": false,
+  "board_verified": false
+}

@@ -1,0 +1,22 @@
+{
+  "revision": "R17.2_SLAVE_QUIET",
+  "result": "PASS_HOST_CHECKS",
+  "generated_source_reproducible": true,
+  "ASan_UBSan": true,
+  "LeakSanitizer": "NOT_RUN_PTRACE_ENVIRONMENT",
+  "tests": [
+    {
+      "periodic_uart": 0,
+      "result": "PASS",
+      "stdout": "[CAN-FILTER] enabled=0x1 mask_raw=0x5fffffff code=0x00000000 accept=ALL_STD\n[CAN-MODE] fd=0 internal=0 external=0 listen=0 standby=0 self_ack=0 single_shot=1\n[CAN-TIMING] seg1=64 seg2=16 sjw=16 prescaler=2 target=500000 timer=1000000\n[CAN-HW] REC=0 TEC=0 KOER=0 overflow=0 busoff=0\nPASS R17.2 periodic_uart=0 bytes=0; busy/time guards and error sampling retained\n[CAN-FILTER] enabled=0x1 mask_raw=0x5fffffff code=0x00000000 accept=ALL_STD\n[CAN-MODE] fd=0 internal=0 external=0 listen=0 standby=0 self_ack=0 single_shot=1\n[CAN-TIMING] seg1=64 seg2=16 sjw=16 prescaler=2 target=500000 timer=1000000\n[CAN-HW] REC=0 TEC=0 KOER=0 overflow=0 busoff=0\n[CAN-FILTER] enabled=0x1 mask_raw=0x5fffffff code=0x00000000 accept=ALL_STD\n[CAN-MODE] fd=0 internal=0 external=0 listen=0 standby=0 self_ack=0 single_shot=1\n[CAN-TIMING] seg1=64 seg2=16 sjw=16 prescaler=2 target=500000 timer=1000000\n[CAN-HW] REC=0 TEC=0 KOER=0 overflow=0 busoff=0\nPASS R17 actual slave scheduler: no ungranted TX, exact RS payload, TX authorization revoked, no duplicate-grant TX, DONE/RELEASED and cancel-before-grant\nPASS R16 actual generated scheduler: autonomous two-node uploads, lost-ACK retry/dedup, simultaneous legacy CAN and RS485 service, TX authorization revoked\nPASS R13: two-node isolation, simultaneous100+100, isolated timeouts, FC06, CAN RW/dedup and bidirectional shared-register readback through scheduler\n"
+    },
+    {
+      "periodic_uart": 1,
+      "result": "PASS",
+      "stdout": "[CAN-FILTER] enabled=0x1 mask_raw=0x5fffffff code=0x00000000 accept=ALL_STD\n[CAN-MODE] fd=0 internal=0 external=0 listen=0 standby=0 self_ack=0 single_shot=1\n[CAN-TIMING] seg1=64 seg2=16 sjw=16 prescaler=2 target=500000 timer=1000000\n[CAN-HW] REC=0 TEC=0 KOER=0 overflow=0 busoff=0\nPASS R17.2 periodic_uart=1 bytes=696; busy/time guards and error sampling retained\n[CAN-FILTER] enabled=0x1 mask_raw=0x5fffffff code=0x00000000 accept=ALL_STD\n[CAN-MODE] fd=0 internal=0 external=0 listen=0 standby=0 self_ack=0 single_shot=1\n[CAN-TIMING] seg1=64 seg2=16 sjw=16 prescaler=2 target=500000 timer=1000000\n[CAN-HW] REC=0 TEC=0 KOER=0 overflow=0 busoff=0\n[CAN-FILTER] enabled=0x1 mask_raw=0x5fffffff code=0x00000000 accept=ALL_STD\n[CAN-MODE] fd=0 internal=0 external=0 listen=0 standby=0 self_ack=0 single_shot=1\n[CAN-TIMING] seg1=64 seg2=16 sjw=16 prescaler=2 target=500000 timer=1000000\n[CAN-HW] REC=0 TEC=0 KOER=0 overflow=0 busoff=0\nPASS R17 actual slave scheduler: no ungranted TX, exact RS payload, TX authorization revoked, no duplicate-grant TX, DONE/RELEASED and cancel-before-grant\nPASS R16 actual generated scheduler: autonomous two-node uploads, lost-ACK retry/dedup, simultaneous legacy CAN and RS485 service, TX authorization revoked\nPASS R13: two-node isolation, simultaneous100+100, isolated timeouts, FC06, CAN RW/dedup and bidirectional shared-register readback through scheduler\n"
+    }
+  ],
+  "ARM_compile_link": "PENDING_USER_SDK",
+  "board_latency": "NOT_TESTED",
+  "file_transfer": "NOT_IMPLEMENTED_IN_THIS_PATCH"
+}

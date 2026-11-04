@@ -1,0 +1,46 @@
+{
+  "id": "ps_snapshot_window_r12_transfer",
+  "model_origin": "frozen R6; trained on PC request RTTs; weights and normalization unchanged",
+  "classification_validation": "PENDING_BOARD_DOMAIN_TEST",
+  "window": "5 non-overlapping paired snapshot generations; no artificial labels or register values",
+  "cadence": "3s after previous snapshot completes, delayed by explicit manual jobs; discard window on missing generation or interval >2*configured_period+2000ms",
+  "per_bus_status": [
+    "ok only if whole 32-register snapshot validates",
+    "timeout only gateway_timeout",
+    "cooldown only gateway_cooldown"
+  ],
+  "unknown_errors": "UDP missing, invalid raw payload/CRC, counter reset, extra sender, wrong identity: reset feature window, no physical-fault label inferred",
+  "features_per_bus_order": [
+    "ok_fraction",
+    "timeout_fraction",
+    "cooldown_fraction",
+    "successful_snapshot_local_transaction_peak_mean_ms",
+    "successful_snapshot_local_transaction_peak_p95_ms",
+    "successful_snapshot_gateway_transaction_peak_mean_ms",
+    "successful_snapshot_gateway_transaction_peak_p95_ms",
+    "failed_snapshot_local_transaction_peak_mean_ms"
+  ],
+  "bus_order": [
+    "CAN",
+    "RS485"
+  ],
+  "transaction_peak": "maximum across attempted transactions in the snapshot, including failed last transaction; not full snapshot duration",
+  "local_rtt": "CLOCK_MONOTONIC at web worker immediately before UDP request to validation completion; includes local IPC and gateway handling; excludes PC Ethernet",
+  "gateway_rtt": "existing gateway application request/reply RTT; excludes web-local IPC; not pure forwarding latency",
+  "transactions_per_successful_snapshot": {
+    "CAN": "32 reads, one register each",
+    "RS485": "4 FC03 reads, eight registers each"
+  },
+  "percentile": "linear interpolation at 0.95*(n-1); empty subsets=0",
+  "inference": "one 16-feature request per 5 accepted snapshots, independent thread, private loopback UDP16002, strict Alnpu",
+  "archive": "NPU result history last32, source samples and exact numeric request/reply included in existing AES256-GCM snapshot stream; no NPU plaintext evidence copied to SD",
+  "scope": "functional integration and numeric consistency only until new domain fault stages are measured",
+  "presentation_policy": {
+    "id": "transition_abstention_v1",
+    "transition": "Within 5 accepted samples, any bus has both available (status=ok) and unavailable (timeout/cooldown) samples. Derived independently of prediction.",
+    "stable": "Availability of each bus is constant across all 5 samples; timeout/cooldown changes alone do not count as transition.",
+    "display": "Transition primary state abstains as switching; original prediction, clipping count, numeric status and raw reply remain visible/archived. Stable predictions remain experimental.",
+    "model_change": false,
+    "accuracy_claim": false
+  }
+}

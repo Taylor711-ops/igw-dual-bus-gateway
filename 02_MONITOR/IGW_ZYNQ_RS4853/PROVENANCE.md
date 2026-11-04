@@ -1,0 +1,7 @@
+# Provenance and test scope
+
+- User-provided `20_rs485_key_led.zip` SHA-256: `44a65ae19a790b29580ccda1016522abaca6da79e78d199e115a88b1df692407`. It is a vendor PL key/LED UART example, not a Modbus slave. The new HDL here is an adaptation, not a vendor-approved or vendor-built bitstream.
+- The packaged `rtl/rs485_key_led.xdc` is unchanged from that example (SHA-256 `17a58603dfa4325a8c89fee093c176f5e9ebbfab03ebb7e7d949a554d799519a`): 50 MHz U18, reset N16, RS485 RX K14, TX M15, keys and LEDs as in the example. Target part from user example: `xc7z020clg400-2`.
+- Main-board UI/backend derives from the user's earlier `IGW_ZYNQ_CAN3` package; old `igw_web.c` SHA-256 `c9da1967a7a960d4cfa698a43b9cda2e267dcd7cbc8c857cfcb852a5ded9ba28`, and old `run_web_gateway.sh` SHA-256 `00aeef89ce74360523da037bd88e20ecb337811ec3c20e245a3eb8cbf4de6e90`. Unit 3's bus direction is changed to RS485, UI and backend reject unsupported operations, and the original source is preserved.
+- Native host mock tests exercise web/UDP/CAN/RS485 processes against an in-memory transport and simulated C register banks. They do not execute the Verilog design and do not prove a real board, RS485 timing, electrical safety, active uploads, or multi-device coexistence.
+- `sim/tb_rs485_unit3.v` is supplied for user execution in Vivado; it has NOT been run here. No Vivado, XSim, iverilog, target cross compiler, bitstream generation, hardware programming or board test is available in the authoring environment.

@@ -1,0 +1,23 @@
+{
+  "revision": "R16_CAN_UPLINK",
+  "result": "PASS_LOCAL_CHECKS",
+  "host_runtime_tests": 40,
+  "failures": 0,
+  "errors": 0,
+  "protocol_ASan_UBSan": "PASS",
+  "actual_generated_slave_scheduler_ASan_UBSan": "PASS",
+  "production_receiver_host_build": "PASS",
+  "frontend_DOM_fetch_component": "PASS",
+  "real_browser_render": "NOT_RUN",
+  "AArch64_cross_build": "PENDING_USER_TOOLCHAIN",
+  "slave_SDK_compile_link": "PENDING_USER_SDK",
+  "board_CAN_uploads": "NOT_RUN",
+  "board_RS485_active_uploads": "NOT_IMPLEMENTED",
+  "classification_accuracy": "NOT_CERTIFIED",
+  "physical_multi_device": "NOT_RUN",
+  "PL_PS_frame_alignment": "NOT_CERTIFIED",
+  "exactly_once_across_power_loss": false,
+  "launcher_runtime_tests": 9,
+  "read_only_preflight_negative_tests": 9,
+  "tests_execution": "31 runtime tests in run_r16_checks + 7 launcher tests + 2 uplink-only launcher tests; all passed; protocol/scheduler/guards/frontend additionally passed"
+}

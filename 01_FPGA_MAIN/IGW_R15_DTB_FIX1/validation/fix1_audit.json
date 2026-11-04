@@ -1,0 +1,35 @@
+{
+  "result": "PASS_OFFLINE_FIX1",
+  "libfdt_check_full": "PASS",
+  "dts_roundtrip_semantic_match": "PASS",
+  "only_change_from_previous_r15_dtb": [
+    [
+      "/soc/axi_dynclk@80101000",
+      "status"
+    ]
+  ],
+  "removed_pl_mmio_nodes": [
+    {
+      "node": "/soc/vdma@80200000",
+      "address": "0x80200000",
+      "status": "disabled"
+    },
+    {
+      "node": "/soc/mipicam@80300000",
+      "address": "0x80300000",
+      "status": "disabled"
+    },
+    {
+      "node": "/soc/vdmafb@80100000",
+      "address": "0x80100000",
+      "status": "disabled"
+    },
+    {
+      "node": "/soc/axi_dynclk@80101000",
+      "address": "0x80101000",
+      "status": "disabled"
+    }
+  ],
+  "board_boot_verified": false,
+  "reason": "Screenshot call stack names anlogic_dynclk_driver_init; old DT still enabled removed display clock MMIO. This patch prevents that probe. Board confirmation required."
+}

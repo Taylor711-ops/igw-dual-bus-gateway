@@ -1,0 +1,31 @@
+{
+  "scope": "User-reported R15 runtime regression, application JSON reviewed. Not an end-to-end frame alignment certificate.",
+  "final_can_attempts": 11736,
+  "final_can_ok": 11736,
+  "final_can_timeout": 0,
+  "final_rs485_attempts": 1500,
+  "final_rs485_ok": 1500,
+  "final_rs485_timeout": 0,
+  "PL_CAPTURED": 22960,
+  "PL_GOOD_DELTA": 22960,
+  "PL_DROP_DELTA": 0,
+  "PL_STUFF_DELTA": 0,
+  "PL_CRC_DELTA": 0,
+  "PL_FORMAT_DELTA": 0,
+  "PL_UNSUPPORTED_DELTA": 0,
+  "PL_ACK_DELTA": 0,
+  "PL_TIMEOUT_DELTA": 0,
+  "PL_FIFO_REMAINING": 0,
+  "final_rs485_authorization": "0x00000000",
+  "final_npu_capability": "0x000000BF",
+  "cross_jobs_reviewed": 6,
+  "cross_units": [
+    1,
+    2
+  ],
+  "online_npu_inferences_in_export": 32,
+  "online_npu_max_diff": 1,
+  "two_times_can_completions_minus_captured": 512,
+  "frame_windows_independently_aligned": false,
+  "R16_board_tested": false
+}

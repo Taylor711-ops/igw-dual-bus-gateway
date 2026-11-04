@@ -1,0 +1,117 @@
+{
+  "result": "PASS_LOCAL_ONLY",
+  "checks": [
+    {
+      "name": "source",
+      "pass": true
+    },
+    {
+      "name": "tb_gateway_decode_compile",
+      "pass": true
+    },
+    {
+      "name": "tb_gateway_decode",
+      "pass": true
+    },
+    {
+      "name": "tb_can_branch_compile",
+      "pass": true
+    },
+    {
+      "name": "tb_can_branch",
+      "pass": true
+    },
+    {
+      "name": "tb_rs485_branch_compile",
+      "pass": true
+    },
+    {
+      "name": "tb_rs485_branch",
+      "pass": true
+    },
+    {
+      "name": "tb_rs485_axi_compile",
+      "pass": true
+    },
+    {
+      "name": "tb_rs485_axi",
+      "pass": true
+    },
+    {
+      "name": "tb_two_boards_50m_compile",
+      "pass": true
+    },
+    {
+      "name": "tb_two_boards_50m",
+      "pass": true
+    },
+    {
+      "name": "tb_rs485_default_9600_compile",
+      "pass": true
+    },
+    {
+      "name": "tb_rs485_default_9600",
+      "pass": true
+    },
+    {
+      "name": "design_0_actual_vendor_ports",
+      "pass": true
+    },
+    {
+      "name": "system_top_actual_vendor_ports",
+      "pass": true
+    },
+    {
+      "name": "reject_clock",
+      "pass": true
+    },
+    {
+      "name": "reject_removed_npu",
+      "pass": true
+    },
+    {
+      "name": "reject_bad_pin",
+      "pass": true
+    },
+    {
+      "name": "reject_truncated_address",
+      "pass": true
+    },
+    {
+      "name": "igw_axi_reject_synthesis",
+      "pass": true
+    },
+    {
+      "name": "igw_rs485_branch_synthesis",
+      "pass": true
+    },
+    {
+      "name": "test_receiver.py",
+      "pass": true
+    },
+    {
+      "name": "test_axi.py",
+      "pass": true
+    },
+    {
+      "name": "host_decoder",
+      "pass": true
+    },
+    {
+      "name": "linux_script_syntax",
+      "pass": true
+    },
+    {
+      "name": "reject_project_file_list",
+      "pass": true
+    },
+    {
+      "name": "reject_port_omission",
+      "pass": true
+    }
+  ],
+  "TD_implemented": false,
+  "board_verified": false,
+  "Linux_DT_reviewed": false,
+  "BOOT_generated": false
+}

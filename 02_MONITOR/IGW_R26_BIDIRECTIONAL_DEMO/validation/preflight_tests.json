@@ -1,0 +1,43 @@
+{
+  "result": "PASS_HOST_GUARD_TESTS",
+  "cases": [
+    {
+      "case": "reviewed_files_and_live_identity",
+      "result": "PASS"
+    },
+    {
+      "case": "old_BOOT_rejected_before_MMIO",
+      "result": "PASS"
+    },
+    {
+      "case": "old_DTB_rejected_before_MMIO",
+      "result": "PASS"
+    },
+    {
+      "case": "live_dynclk_enabled_rejected_before_MMIO",
+      "result": "PASS"
+    },
+    {
+      "case": "active_TX_authorization",
+      "result": "PASS"
+    },
+    {
+      "case": "CAN_identity",
+      "result": "PASS"
+    },
+    {
+      "case": "wrong_RS485_clock",
+      "result": "PASS"
+    },
+    {
+      "case": "wrong_CAN_depth",
+      "result": "PASS"
+    },
+    {
+      "case": "wrong_NPU_capability",
+      "result": "PASS"
+    }
+  ],
+  "real_MMIO_access": false,
+  "board_tested": false
+}

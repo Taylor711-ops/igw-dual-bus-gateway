@@ -1,0 +1,21 @@
+{
+  "release": "R13",
+  "date": "2026-10-22",
+  "base_source_archive_sha256": "d8c36cd219d478d06d736a55a96719ceaa8b5374894270d882e8d1bfd7363a68",
+  "base_source_revision": "R12.2",
+  "fpga_source_archive_sha256": "ccc822d9ffb80b44a20f17a613d1db11e4d4971a2a974bd35d8311669c067691",
+  "master_boot_sha256": "7b81535086c3096ded1e15061118236978730d56f9132d2616bc573cc8dd734c",
+  "fpga_changed": false,
+  "slave_application_changed": true,
+  "new_slave_default": {
+    "first_node": 1,
+    "logical_nodes": 2,
+    "physical_slave_boards": 1
+  },
+  "max_configured_nodes": 16,
+  "target_build": "NOT_RUN",
+  "target_board_tests": "NOT_RUN",
+  "model_weights_changed": false,
+  "vault_core_changed": false,
+  "frozen_R9_regression_directory_changed": false
+}

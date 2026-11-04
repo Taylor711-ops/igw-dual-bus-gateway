@@ -1,0 +1,19 @@
+{
+  "revision": "R16_CAN_UPLINK",
+  "baseline_source_sha256": "eaec2d25aa993196476d29abe2bce52eba283a48e7b7228fcef29cb64d423835",
+  "unchanged_frozen_files": {
+    "src/igw_can_udp.c": "deb87ea7042876e84a986ae833a5a3c949fb81e3228e511456237bebb3474029",
+    "src/igw_rs485_rw.c": "e77035315e6e08a420320f46a5f653fc513707284810d0fec308add8cef3576d",
+    "src/igw_vault.c": "1595ce6c0217eed187a6e5f93f54b22df6007a751eaed23d7dc1146d8851b09f",
+    "src/npu_model.h": "f6f5b51888f85ef43c845c0c9537ae51ec008707de881b3ffb592c689867e824",
+    "npu/generated/model_quantized.json": "1e6bdb90067e7bab0a6aa70639332dd5dea26f0754e796fdd71ee7e287681e17",
+    "npu/src/igw_fault_online.cpp": "064701d24a3ddc4d9d057914cbc82896d6f8bf0ac66329f254b78794d00e7caa",
+    "deploy/run_npu_local.sh": "36ef53ba61a46c64c19f49df6aba3f0157885e454348694ddde7259e17d91a08"
+  },
+  "npu_bridge_change": "Software revision serialization only; inference features and model unchanged",
+  "new_protocol_header_shared_byte_identical": true,
+  "new_hardware_bitstream": false,
+  "new_main_BOOT": false,
+  "R15_BOOT_sha256": "83a016557c5e93f9bf26ef5017fce67eb4221a28322c24bdf8b19c81e8075215",
+  "DTB_FIX1_sha256": "771d4692c3de93c00095515359f769becf2cba8aee144752905dec984745a1af"
+}

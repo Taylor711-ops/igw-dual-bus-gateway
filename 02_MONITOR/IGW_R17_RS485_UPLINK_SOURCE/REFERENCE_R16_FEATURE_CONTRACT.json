@@ -1,0 +1,25 @@
+{
+  "software_revision": "R16_CAN_UPLINK",
+  "main_hardware": "R15 + DTB FIX1",
+  "device_initiated_CAN_latest_state": true,
+  "device_initiated_RS485_upload": false,
+  "logical_node_range": [
+    1,
+    16
+  ],
+  "default_logical_nodes": 2,
+  "physical_slave_boards_tested_r16": 0,
+  "host_register_address": 16,
+  "host_register_space_separate_from_slave_bank": true,
+  "data_source": "device_generated_test_counter",
+  "period_ms": 1000,
+  "ack_retry_ms": 250,
+  "max_attempts_per_data_state": 3,
+  "persistent_host_registers": false,
+  "dedup_scope": "current host epoch + sequence + unit; no global exactly-once claim",
+  "NPU_model_change": false,
+  "NPU_scope_unit": 1,
+  "CAN_link_encryption": false,
+  "encrypted_local_evidence": "Existing AES256-GCM vault; uplink snapshot included in Web evidence; target validation pending",
+  "target_deployment_status": "NOT_RUN"
+}

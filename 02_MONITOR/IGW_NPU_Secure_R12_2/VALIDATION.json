@@ -1,0 +1,42 @@
+{
+  "source_revision": "R12.2",
+  "host_tests": 55,
+  "failures": 0,
+  "errors": 0,
+  "json_parser_asan_ubsan_100000_fuzz_cases": "PASS",
+  "frontend_dom_fetch_component": "PASS",
+  "static_web_and_dynamic_vault_host_build": "PASS",
+  "crypto_host_runtime": "OpenSSL 3.0.13",
+  "cross_implementation_AESGCM_PBKDF2": "PASS",
+  "target_openssl_1_1": "R12 board evidence exists; R12.2 NOT_RUN",
+  "target_arm64_build": "PENDING_USER_TOOLCHAIN",
+  "hardware_r12_2": "NOT_RUN",
+  "sd_fat_rename_fsync": "NOT_RUN",
+  "power_cycle_recovery": "NOT_RUN",
+  "classification_transfer_accuracy": "NOT_CERTIFIED; stable observed cases consistent, mixed RS recovery misclassified; model unchanged",
+  "frozen_reference_150": "PASS",
+  "full_middle_target": "NOT_COMPLETE",
+  "normal_host_tests": {
+    "tests": 55,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 76.15
+  },
+  "asan_ubsan_host_tests": {
+    "tests": 55,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 119.826
+  },
+  "sdk_32_1_headers_syntax_only": "PASS",
+  "board_r12_raw_evidence_audit": {
+    "sessions": 3,
+    "retained_numeric_windows": 64,
+    "successful_frames": 36,
+    "result": "PASS_AUDIT",
+    "physical_ground_truth": "NOT_INDEPENDENT",
+    "rs485_recovery_mixed_window_wrong_raw_bus_label": true
+  },
+  "r12_2_board_transition_presentation": "PENDING_USER_TEST",
+  "r12_1_stop_fix": "MERGED; host regression PASS; prior operator R12.1 stop/restart evidence exists"
+}

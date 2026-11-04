@@ -1,0 +1,13 @@
+{
+  "revision": "R15_GATEWAY_ONLY_SOURCE_CANDIDATE",
+  "prepared_date": "2026-10-23",
+  "baseline": "IGW_PL_CAN_R14_1",
+  "local_rtl_and_interface_checks": "PASS",
+  "vendor_implementation": "PENDING_USER_TD",
+  "final_timing": "PENDING",
+  "linux_video_device_tree": "PENDING_LIVE_DT_COLLECTION",
+  "new_boot_image": "NOT_GENERATED",
+  "hardware_regression": "PENDING",
+  "intermediate_acceptance": "NOT_SIGNED_OFF",
+  "advanced_features_added": false
+}

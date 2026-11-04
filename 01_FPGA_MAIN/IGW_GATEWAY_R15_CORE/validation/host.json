@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "scope": "host decoder and safe argument/old-BOOT rejection only; no /dev/mem access",
+  "ASan_UBSan": true,
+  "LeakSanitizer_enabled": false,
+  "record_byte_order": true,
+  "remote_frame_no_payload": true,
+  "truncated_record_rejected": true,
+  "invalid_arguments_rejected": true,
+  "missing_and_R13_BOOT_hash_rejected": true
+}

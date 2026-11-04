@@ -1,0 +1,56 @@
+{
+  "package": "IGW_CAN_RS485_RW_R9",
+  "date": "2026-10-21 Asia/Shanghai",
+  "baseline_package": "IGW_RS485_RW_R8",
+  "baseline_package_sha256": "8df14ebdb224b711dd9c77dfb0e6b0782809b654315044098ac49c84b64e01eb",
+  "main_boot_unchanged_sha256": "7b81535086c3096ded1e15061118236978730d56f9132d2616bc573cc8dd734c",
+  "main_rs485_base": "0x80400000",
+  "main_rs485_clock_hz": 50000000,
+  "slave_rs485_base": "0x80100000",
+  "slave_rs485_clock_hz": 100000000,
+  "can_controller": "existing PS integrated CAN, not newly implemented PL CAN",
+  "shared_bank": "single slave uint16_t[32], writable16..31, FC03/FC06 compatible",
+  "rs485_revision": "0x0801",
+  "can_business_revision": "0x0901",
+  "can_ids": {
+    "legacy_request": "0x201",
+    "legacy_reply": "0x181",
+    "rw_request": "0x211",
+    "rw_reply": "0x191"
+  },
+  "unchanged_r8_components_sha256": {
+    "src/igw_rs485_rw.c": "6863407b0db56473cca4844e5d26603f2841276964070361744db2dde36613ac",
+    "src/rw_wire.h": "132e4523377b90656599b56813278fb5d0936378ee314b79f497675670f8cdc7",
+    "pc/rs485_rw_test.py": "0da1e8f8ec460ef8168523eb2193f2db4a8cae33724cde1559803976180d464f",
+    "slave_src/can_common.inc": "652d827aed99c7312b3ea42eac59ccdd5085a9763b859fe98aa99db779798c17",
+    "slave_src/rtu_common.inc": "7ed24f801a17775648c8490dc180d0e8a3f2ea22687e5e60264b9a0931cd1577",
+    "slave_src/igw_driver.h": "e10316678a6b36e411d6688ea2e764e2b6ed7de8f3a0c4f1d3390fb0558716bd",
+    "slave_src/igw_protocol.h": "50dda1f2b08bd7f4012e1dcb30b967f03ae7b145c5dc88fbb11e8ce233b0a5f0"
+  },
+  "changed_linux_can_sha256": "5b0de55249722bec3781f4503660827234888fe163018e1138e7f5f1a8c432ce",
+  "new_slave_main_sha256": "1eaf48c85ece834164a6bc8611208ce489a6cd6e794bceeaf9f0723b45ec53c2",
+  "target_arm_build": "PENDING_USER_TOOLCHAIN",
+  "r9_hardware": "NOT_RUN",
+  "new_main_boot_or_fpga_required": false,
+  "slave_application_rebuild_required": true,
+  "r8_hardware_baseline": {
+    "evidence": "rs485_rw_20261021_100854_9f83d8.jsonl",
+    "sha256": "55bad319fb72abf3f617c04600cebbaf4f189d7f0615ad656e3254150de311bd",
+    "rounds": 100,
+    "register": 31,
+    "transactions": 500,
+    "result": "RAW_AUDIT_PASS",
+    "errors": 0,
+    "counter_start": 10,
+    "counter_end": 110
+  },
+  "pending_middle_goals": [
+    "hardware CAN and cross-protocol acceptance",
+    "autonomous slave reports if required",
+    "multiple logical devices / physical-device scope",
+    "board web monitor/control",
+    "encrypted SD storage and recovery",
+    "concurrent fault recovery and final quantified report",
+    "review PL dual-bus scoring and full-design timing gaps"
+  ]
+}

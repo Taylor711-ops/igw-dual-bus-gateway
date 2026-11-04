@@ -1,0 +1,13 @@
+{
+  "VM_FSBL_matches_reference_LOAD": true,
+  "FSBL_initialized_bytes": 187264,
+  "UBoot_extraction_source": "Provided BOOT(1).bin with pinned SHA256; validated header chain and CRC32; unpadded partition 2 payload copied exactly.",
+  "UBoot_bytes": 926280,
+  "R15_vendor_build_executed_locally": false,
+  "SDK_scripts_reviewed": [
+    "create_dr1m_image.sh",
+    "move_files.sh",
+    "drcfg.sh"
+  ],
+  "SDK_original_BIF_parameters_reused": true
+}
