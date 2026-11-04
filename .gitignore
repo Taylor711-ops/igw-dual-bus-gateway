@@ -1,8 +1,7 @@
-# Local build products and vendor-generated IP (obtain under applicable rights)
-01_FPGA_MAIN/IGW_GATEWAY_R15_CORE/project_r15/soc_prj/design_0/ip/
+build/
 vivado_generated/
-*.jou
-*.log
+*.xsa
 *.bit
 *.elf
-*.xsa
+*.log
+01_gateway_host/PL/soc_prj/design_0/ip/

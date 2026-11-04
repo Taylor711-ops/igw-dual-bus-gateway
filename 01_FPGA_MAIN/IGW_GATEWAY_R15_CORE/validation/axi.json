@@ -1,4 +1,0 @@
-{
-  "result": "PASS",
-  "scope": "serial-to-FIFO record plus AXI/FIFO unit simulation; injection used only for FIFO boundaries"
-}

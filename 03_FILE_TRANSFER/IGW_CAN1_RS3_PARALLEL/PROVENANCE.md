@@ -1,7 +1,0 @@
-# CAN1 + RS485 unit3 parallel build: origin and validation boundary
-
-Derived from the previously staged IGW_ZYNQ_RS4853_FILE.zip, SHA-256 f4ec1306244685fda740515029ca62fd5602d067f3fb866132765ee75ca0dc69. This derivative changes only the host file web, host file CLI lock coordination, its installer/build scripts, tests, and accompanying documentation. The Zynq and slave sources in the package are retained for traceability; no reprogramming of either slave is required by this version.
-
-Per user-supplied evidence, the predecessor successfully completed separate unit 3 RS485 4096-byte put/get/generate with SHA-256 checks, earlier unit 1 CAN file exchange, unit 3 telemetry/uplink, and multi-node numeric reads. Those observations are not evidence for concurrent physical transfers.
-
-This version's computer tests use the actual host HTTP job scheduler and file protocol implementations, with two independently simulated slave boards and storage. They validate overlapping CAN unit 1 and RS485 unit 3 upload/readback, integrity, both job start orders, allowed-pair enforcement, cancellation, per-task failure handling, owner-lock capability, and preservation of the prior installation. Tests cannot establish actual board timing, wire-level concurrency, signal integrity, hardware compatibility, power-loss behavior, or physical performance. No AArch64 compiler or target board is present in this environment; AArch64 build and physical tests remain pending.
